@@ -1,0 +1,136 @@
+$compass
+title
+02_benzyl_u_b3lyp_tzvp_td_chx_clr
+basis
+def2-tzvp
+Geometry
+C -0.00000161 0.00003949 2.82194699
+C 0.00000487 0.00004360 1.40779153
+C -1.21840079 -0.00003737 0.66492075
+C 1.21841004 -0.00003683 0.66491964
+C -1.21276956 -0.00000928 -0.72493783
+C 1.21277242 -0.00001447 -0.72494085
+C -0.00000240 0.00002169 -1.43161625
+H -0.93657088 0.00000994 3.38411571
+H 0.93655753 0.00001727 3.38413138
+H -2.16764514 -0.00004487 1.20841894
+H 2.16765427 -0.00003398 1.20841845
+H -2.16048379 0.00000843 -1.27077682
+H 2.16048664 -0.00000308 -1.27078019
+H -0.00001160 0.00003947 -2.52461096
+End geometry
+unit
+ang
+nosymm
+$end
+
+$xuanyuan
+$end
+
+$scf
+roks
+dft
+b3lyp
+charge
+0
+spinmulti
+2
+grid
+fine
+maxiter
+200
+threne
+1.0e-9
+thrden
+1.0e-7
+molden
+solvent
+cyclohexane
+solmodel
+iefpcm
+cavity
+swig
+cavityngrid
+302
+radiustype
+uff
+vdwscale
+1.1
+$end
+
+$tddft
+imethod
+2
+isf
+0
+itda
+0
+itest
+0
+icorrect
+0
+itrans
+0
+iroot
+30
+idiag
+1
+iprt
+3
+cthrd
+0.05
+crit_e
+1.0e-10
+crit_vec
+1.0e-6
+maxcycle
+100
+istore
+1
+$end
+
+$tddft
+imethod
+2
+isf
+0
+itda
+0
+itest
+0
+icorrect
+0
+itrans
+0
+iroot
+30
+idiag
+1
+iprt
+3
+cthrd
+0.05
+crit_e
+1.0e-10
+crit_vec
+1.0e-6
+maxcycle
+100
+solneqlr
+istore
+1
+$end
+
+$resp
+nfiles
+1
+method
+2
+iroot
+2 3 4 5
+geom
+norder
+0
+solneqlr
+solneqss
+$end

@@ -1,0 +1,105 @@
+$compass
+title
+05_benzyl_rgas_b3lyp_tzvp_gas_ux_r30
+basis
+def2-tzvp
+Geometry
+C 0.00000055 0.00001485 2.81746545
+C -0.00000134 0.00003196 1.40903243
+C -1.21978940 -0.00000012 0.66488424
+C 1.21978785 -0.00000248 0.66488368
+C -1.21350089 -0.00000089 -0.72293765
+C 1.21350174 0.00000281 -0.72293780
+C 0.00000032 0.00000633 -1.42979774
+H -0.93675013 -0.00001197 3.37929811
+H 0.93675246 -0.00001217 3.37929548
+H -2.16791470 -0.00000519 1.20946078
+H 2.16791222 -0.00000853 1.20946167
+H -2.16042119 -0.00000674 -1.26936531
+H 2.16042269 -0.00000406 -1.26936428
+H -0.00000018 -0.00000379 -2.52237809
+End geometry
+unit
+ang
+nosymm
+$end
+
+$xuanyuan
+$end
+
+$scf
+roks
+dft
+b3lyp
+charge
+0
+spinmulti
+2
+grid
+fine
+maxiter
+200
+threne
+1.0e-9
+thrden
+1.0e-7
+molden
+$end
+
+$tddft
+imethod
+2
+isf
+0
+itda
+0
+itest
+0
+icorrect
+0
+itrans
+0
+iroot
+30
+idiag
+1
+iprt
+3
+cthrd
+0.05
+crit_e
+1.0e-10
+crit_vec
+1.0e-6
+maxcycle
+100
+$end
+
+$tddft
+imethod
+2
+isf
+0
+itda
+0
+itest
+1
+icorrect
+1
+itrans
+0
+iroot
+30
+idiag
+1
+iprt
+3
+cthrd
+0.05
+crit_e
+1.0e-10
+crit_vec
+1.0e-6
+maxcycle
+100
+$end
